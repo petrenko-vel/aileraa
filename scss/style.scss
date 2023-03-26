@@ -1,0 +1,192 @@
+
+@font-face {
+    font-family: "Gilroy";
+    font-display: swap;
+    src: url("../fonts/Gilroy-Light.woff") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    font-display: swap;
+    src: url("../fonts/Gilroy-Medium.woff") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    font-display: swap;
+    src: url("../fonts/Gilroy-Regular.woff") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    font-display: swap;
+    src: url("../fonts/Gilroy-Semibold.woff") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+*,
+*::before,
+*::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 600;
+}
+.container {
+    padding: 0 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input, button {
+    background: none;
+    outline: none;
+}
+title {
+    font-size: 24px;
+}
+
+.head__button {
+    display: none;
+}
+// ..............<HEADER>..................
+
+
+.header {
+    margin-top: calc(50px + (7 + 7 * 0.7) * ((100vw - 320px) / 1440));
+    &__logotype {
+        font-weight: 700;
+        font-size: 50px;
+        color: #000000;
+    }
+
+    &__text {
+        padding-top: 44px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 114.8%;
+        letter-spacing: 0.045em;
+        text-transform: lowercase;
+        color: #242424;
+    }
+
+    &__offer {
+    }
+}
+.container {
+}
+.offer {
+    top: 60px;
+    position: relative;
+    span {
+        font-weight: 700;
+        font-size: calc(60px + (120 + 120 * 0.7) * ((100vw - 320px) / 1440));
+        line-height: 114.8%;
+        letter-spacing: 0.045em;
+        text-transform: uppercase;
+        color: #FF00B8;
+    }
+    &__rihgt {
+        display: flex;
+        justify-content: flex-end;
+        span {
+            font-size: 200px;
+            position: absolute;
+            right: 350px;
+            top: -80px;
+        }
+        img {
+            width: 600px;
+        }
+    }
+
+    &__left {
+        position: relative;
+        top: -140px;
+        span:last-child {
+            padding-left: calc(20px + (30 + 30 * 0.7) * ((100vw - 320px) / 1440));
+        }
+    }
+
+}
+
+@media (max-width: 1180px) {
+    .header__text {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .offer__left {
+        position: initial;
+    }
+}
+@media (max-width: 844px) {
+    .offer__rihgt img {
+        width: 410px;
+    }
+    .header__logotype {
+        font-size: 25px;
+    }
+    .header__text {
+        font-size: 18px;
+    }
+    .offer__rihgt span {
+        font-size: 150px;
+    }
+    .offer__rihgt {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .offer__rihgt span {
+        right: 210px;
+        top: -82px;
+    }
+    .offer__rihgt span {
+        position: initial;
+    }
+    .offer__block-two {
+        display: flex;
+        justify-content: center;
+    }
+    .offer__block-one {
+        position: absolute;
+        top: -79px;
+    }
+}
+@media (max-width: 414px) {
+    .header__logotype {
+        font-size: 18px;
+    }
+    .header__text {
+        font-size: 13px;
+    }
+    .offer__rihgt span {
+        font-size: 96px;
+    }
+    .offer__rihgt img {
+        width: calc(200px + (67 + 67 * 0.7) * ((100vw - 320px) / 1440));
+    }
+    .offer__block-two {
+        justify-content: flex-end;
+    }
+    .offer__block-one {
+        top: -50px;
+    }
+}
