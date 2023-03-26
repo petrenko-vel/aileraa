@@ -164,7 +164,7 @@ title {
 }
 @media (max-width: 414px) {
   .header__logotype {
-    font-size: 18px;
+    font-size: 25px;
   }
   .header__text {
     font-size: 13px;
